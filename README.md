@@ -29,6 +29,7 @@ An end-to-end machine learning web application to classify SMS and email message
 
 sms-spam-classifier/
 │
+
 ├── app.py                 # Streamlit app for user interaction
 
 ├── model.pkl              # Trained ML model
