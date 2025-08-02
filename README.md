@@ -26,27 +26,39 @@ An end-to-end machine learning web application to classify SMS and email message
 | Others             | Scikit-learn, pandas, NumPy                |
 
 📂 Project Structure:
+
 sms-spam-classifier/
+
 │
 ├── app.py                 # Streamlit app for user interaction
+
 ├── model.pkl              # Trained ML model
+
 ├── vectorizer.pkl         # TF-IDF vectorizer object
+
 ├── trainmodel..py         # Text preprocessing functions
+
 ├── README.md              # Project documentation
+
 └── requirements.txt       # Python dependencies
 
 
 ⚙️ How to Run the Project: 
+
+
 # 1. Clone the repository
+```bash
 git clone https://github.com/yourusername/spam-classifier.git
 cd spam-classifier
-
+```
 # 2. Install required packages
+```bash
 pip install -r requirements.txt
-
+```
 # 3. Run the application
+```bash
 streamlit run app.py
-
+```
 
 
 
