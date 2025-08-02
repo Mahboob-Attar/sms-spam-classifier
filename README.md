@@ -28,7 +28,6 @@ An end-to-end machine learning web application to classify SMS and email message
 📂 Project Structure:
 
 sms-spam-classifier/
-
 │
 ├── app.py                 # Streamlit app for user interaction
 
@@ -49,6 +48,8 @@ sms-spam-classifier/
 # 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/spam-classifier.git
+```
+```bash
 cd spam-classifier
 ```
 # 2. Install required packages
