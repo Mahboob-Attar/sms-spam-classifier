@@ -23,6 +23,7 @@ An end-to-end Machine Learning + FastAPI web application that classifies SMS/Ema
 🖥️ Tech Stack
 
 #Backend
+
 FastAPI Uvicorn Python 3 Scikit-Learn NLTK Pydantic Pickle (model & vectorizer)
 
 #Frontend
