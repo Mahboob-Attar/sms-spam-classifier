@@ -1,18 +1,59 @@
-# 📧 Spam Message Classifier – ML Web App
-An end-to-end machine learning web application to classify SMS and email messages as Spam or Not Spam using NLP and Naive Bayes.
+📧 SMS & Email Spam Classifier – ML + FastAPI Web App
 
-🚀 Features:
+An end-to-end Machine Learning + FastAPI web application that classifies SMS/Email messages as Spam or Not Spam using NLP and Multinomial Naive Bayes.
 
-🔍 Real-time spam detection through a simple web form
+🚀 Features
 
-🧠 Machine Learning (Multinomial Naive Bayes) for classification
+🔍 Real-time spam detection
 
-🧹 Text preprocessing: tokenization, stopword removal, stemming
+🧠 Multinomial Naive Bayes classifier
 
-📊 TF-IDF vectorization to convert text into numerical features
+🧹 Text preprocessing (cleaning, stopwords, stemming)
 
-💬 Supports both email and SMS classification
+📊 TF-IDF vectorization
 
+🌐 FastAPI backend + HTML/CSS/JS frontend
+
+💬 Supports SMS & Email classification
+
+🎨 Color-coded results
+
+🟥 Spam
+
+🟩 Not Spam
+
+🖥️ Tech Stack
+Backend
+
+FastAPI
+
+Uvicorn
+
+Python 3
+
+Scikit-Learn
+
+NLTK
+
+Pydantic
+
+Pickle (model & vectorizer)
+
+Frontend
+
+HTML
+
+CSS
+
+JavaScript (Fetch API)
+
+Machine Learning
+
+TF-IDF Vectorizer
+
+Multinomial Naive Bayes
+
+NLP Preprocessing
 
 
 
