@@ -11,36 +11,9 @@ An end-to-end machine learning web application to classify SMS and email message
 
 📊 TF-IDF vectorization to convert text into numerical features
 
-🌐 Web app built with Streamlit and Python
-
 💬 Supports both email and SMS classification
 
-🧠 Tech Stack & Key Skills:
-| Category           | Tools & Libraries                          |
-| ------------------ | ------------------------------------------ |
-| Programming        | Python                                     |
-| NLP Tools          | NLTK (stopwords, tokenizer, stemmer)       |
-| ML Algorithm       | Multinomial Naive Bayes                    |
-| Feature Extraction | TF-IDF Vectorizer                          |
-| Web Framework      | Streamlit (frontend + backend integration) |
-| Others             | Scikit-learn, pandas, NumPy                |
 
-📂 Project Structure:
-
-sms-spam-classifier/
-│
-
-├── app.py                 # Streamlit app for user interaction
-
-├── model.pkl              # Trained ML model
-
-├── vectorizer.pkl         # TF-IDF vectorizer object
-
-├── trainmodel..py         # Text preprocessing functions
-
-├── README.md              # Project documentation
-
-└── requirements.txt       # Python dependencies
 
 
 ⚙️ How to Run the Project: 
@@ -51,7 +24,7 @@ sms-spam-classifier/
 git clone https://github.com/yourusername/spam-classifier.git
 ```
 ```bash
-cd spam-classifier
+cd sms-spam-classifier
 ```
 # 2. Install required packages
 ```bash
