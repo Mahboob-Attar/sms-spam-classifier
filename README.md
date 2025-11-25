@@ -18,42 +18,20 @@ An end-to-end Machine Learning + FastAPI web application that classifies SMS/Ema
 
 🎨 Color-coded results
 
-🟥 Spam
-
-🟩 Not Spam
+🟥 Spam  🟩 Not Spam
 
 🖥️ Tech Stack
-Backend
 
-FastAPI
+#Backend
+FastAPI Uvicorn Python 3 Scikit-Learn NLTK Pydantic Pickle (model & vectorizer)
 
-Uvicorn
+#Frontend
 
-Python 3
+HTML CSS JavaScript (Fetch API)
 
-Scikit-Learn
+#Machine Learning
 
-NLTK
-
-Pydantic
-
-Pickle (model & vectorizer)
-
-Frontend
-
-HTML
-
-CSS
-
-JavaScript (Fetch API)
-
-Machine Learning
-
-TF-IDF Vectorizer
-
-Multinomial Naive Bayes
-
-NLP Preprocessing
+TF-IDF Vectorizer Multinomial Naive Bayes NLP Preprocessing
 
 
 
