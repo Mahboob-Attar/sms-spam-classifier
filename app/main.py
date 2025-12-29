@@ -1,27 +1,30 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from app.utils import predict_message
 
-app = FastAPI()
+app = Flask(__name__)
 
-# Allow frontend access
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],       # Allow all domains (frontend)
-    allow_credentials=True,
-    allow_methods=["*"],       # Allow all HTTP methods
-    allow_headers=["*"],       # Allow all headers
-)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
-class SMSRequest(BaseModel):
-    message: str
+@app.route("/predict", methods=["POST"])
+def predict_sms():
+    data = request.get_json()
 
-@app.post("/predict")
-def predict_sms(request: SMSRequest):
-    pred = predict_message(request.message)
-    return {"message": request.message, "prediction": pred}
+    message = data.get("message")
 
-@app.get("/")
+    if not message:
+        return jsonify({"error": "Message is required"}), 400
+
+    pred = predict_message(message)
+
+    return jsonify({
+        "message": message,
+        "prediction": pred
+    })
+
+@app.route("/", methods=["GET"])
 def home():
-    return {"status": "SMS Spam Classifier API Running!"}
+    return jsonify({"status": "SMS Spam Classifier API Running!"})
+
+if __name__ == "__main__":
+    app.run(debug=True)
